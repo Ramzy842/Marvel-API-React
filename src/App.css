@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   scroll-behavior: smooth;
-} 
+}
 
 html,
 body {
@@ -17,20 +16,14 @@ body {
   background: rgb(82, 82, 82);
   min-height: 100%;
   overflow-x: hidden;
-
 }
-
-
 
 #root {
   width: 100%;
   margin: 0 auto;
-
   min-height: 100%;
   height: 100%;
 }
-
-
 
 nav {
   display: flex;
@@ -42,12 +35,10 @@ nav {
   margin-bottom: 1rem;
 }
 
-
 .logo {
   font-size: 1.7rem;
   outline: none;
 }
-
 
 .logo h1 {
   color: #ff1548;
@@ -56,7 +47,6 @@ nav {
 .link-style,
 .logo {
   text-decoration: none;
-
 }
 
 .link-style {
@@ -70,9 +60,7 @@ nav {
 }
 
 .link-style:hover {
-
   background: #d80036;
-
 }
 
 .links-list {
@@ -85,7 +73,11 @@ nav {
   align-items: center;
 }
 
-.github-link{
+.menu-icon {
+  display: none;
+}
+
+.github-link {
   text-decoration: none;
   color: #07b1ff;
   height: auto;
@@ -99,7 +91,7 @@ nav {
   transition: 0.2s;
 }
 
-.github-link-footer{
+.github-link-footer {
   text-decoration: none;
   color: #07b1ff;
   height: auto;
@@ -109,15 +101,13 @@ nav {
   font-size: 1.2rem;
   background: #000;
   transition: 0.2s;
-  
 }
 
-.github-link:hover, .github-link-footer:hover{
+.github-link:hover,
+.github-link-footer:hover {
   background: #07b1ff;
   color: #000;
 }
-
-
 
 .footer {
   background: rgb(37, 37, 37);
@@ -137,7 +127,6 @@ nav {
   align-items: center;
   margin-bottom: 1rem;
   height: 5rem;
-
 }
 
 .search-form input {
@@ -159,22 +148,23 @@ nav {
 .home-page,
 .about-page,
 .single-character-page,
-.single-comic-page, .mcu-page, .error-page {
+.single-comic-page,
+.mcu-page,
+.error-page {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
 
-.hero{
+.hero {
   height: 90vh;
   display: flex;
   align-items: center;
   border-bottom: 2px solid #fff;
 }
 
-
-.hero section{
+.hero section {
   height: 70%;
   width: 70%;
   margin-top: -8rem;
@@ -184,22 +174,21 @@ nav {
   justify-content: space-evenly;
 }
 
-.hero section h1{
+.hero section h1 {
   margin-bottom: 1rem;
   font-size: 4rem;
   letter-spacing: 2px;
   color: #fff;
 }
 
-.paragraphs{
+.paragraphs {
   margin-top: -2rem;
   font-size: 1.5rem;
   line-height: 1.6;
   font-weight: 700;
 }
 
-
-.about-container{
+.about-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -208,7 +197,7 @@ nav {
   overflow: hidden;
 }
 
-.about-container p{
+.about-container p {
   font-size: 1.3rem;
   width: 60%;
   margin-top: 1rem;
@@ -216,22 +205,23 @@ nav {
   font-weight: 600;
   line-height: 1.5;
 }
-.about-container h2{
+
+.about-container h2 {
   margin-bottom: 1.1rem;
   display: flex;
   align-items: center;
 }
-.technologies{
+
+.technologies {
   margin-bottom: 1.5rem;
 }
 
-
-.techs-logo{
+.techs-logo {
   margin-right: 0.5rem;
   font-size: 1.5rem;
 }
 
-.technologies ul{
+.technologies ul {
   display: flex;
   width: 40%;
   list-style: none;
@@ -239,10 +229,9 @@ nav {
   align-items: center;
   margin-left: 2rem;
   padding: 1rem;
-  
 }
 
-.technologies ul li{
+.technologies ul li {
   text-align: center;
   width: 100%;
   padding: 1rem;
@@ -250,12 +239,12 @@ nav {
   box-shadow: 2px 5px 5px #111111;
 }
 
-.technologies ul li span{
+.technologies ul li span {
   display: block;
   font-weight: 800;
 }
 
-.technologies ul li:first-child{
+.technologies ul li:first-child {
   background: #07b1ff;
   margin-right: 1rem;
 }
@@ -264,19 +253,17 @@ nav {
   background: rgb(255, 136, 0);
 }
 
-
-.tech-logo{
+.tech-logo {
   font-size: 2rem;
 }
 
-
-.btns{
+.btns {
   display: flex;
   width: 50%;
   justify-content: space-between;
 }
 
-.hero-link{
+.hero-link {
   text-decoration: none;
   color: rgb(255, 255, 255);
   background: rgb(0, 0, 0);
@@ -288,10 +275,11 @@ nav {
   font-size: 1.2rem;
 }
 
-.hero-link:hover{
+.hero-link:hover {
   color: #000;
   background: #fff;
 }
+
 .characters header,
 .comics header {
   display: flex;
@@ -317,33 +305,82 @@ nav {
 .loading,
 .no-character-search,
 .no-comic-search,
-.mcu-characters, .error {
+.mcu-characters,
+.error {
   width: 90%;
   margin: 0 auto;
 }
 
-.categories{
+.loading {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
 
+.loading div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 8px solid transparent;
+  border-top-color: #07b1ff;
+  border-radius: 50%;
+  animation: spinFirst 1.2s linear infinite;
+}
+
+.loading div:nth-child(2) {
+  border: 8px solid transparent;
+  border-bottom-color: #07b1ff;
+  animation: spinSec 1.2s linear infinite;
+}
+
+@keyframes spinFirst {
+  0% {
+    transform: rotate(0deg);
+    border-width: 10px;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-width: 1px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 10px;
+  }
+}
+
+@keyframes spinSec {
+  0% {
+    transform: rotate(0deg);
+    border-width: 1px;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-width: 10px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 1px;
+  }
+}
+
+.categories {
   display: flex;
   background: rgb(44, 44, 44);
   align-items: flex-start;
   padding: 1rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
 }
 
-.mcu-avengers{
-
+.mcu-avengers {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-
-
-.mcu-avengers img{
+.mcu-avengers img {
   width: 251.25px;
   max-width: 251.25px;
   height: 447px;
@@ -351,23 +388,21 @@ nav {
   box-shadow: 0px 2px 8px #07b1ff;
 }
 
-.mcu-avengers h2, .page-title{
+.mcu-avengers h2,
+.page-title {
   margin-top: 2rem;
   margin-bottom: 1rem;
   color: rgb(255, 255, 255);
 }
 
-
-.mcu-avengers h2{
- 
- width: 100%;
- text-align: center; 
- padding: 0.5rem 1rem;
- margin-bottom: 0;
+.mcu-avengers h2 {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
 }
 
-
-.avengers-link{
+.avengers-link {
   text-decoration: none;
   color: rgb(0, 0, 0);
   background: #ffffff;
@@ -379,8 +414,7 @@ nav {
   font-weight: 800;
 }
 
-.mcu-avengers-content{
-
+.mcu-avengers-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -389,10 +423,9 @@ nav {
   transition: 0.3s;
 }
 
-.mcu-avengers-content:hover{
+.mcu-avengers-content:hover {
   transform: translateY(-5px);
 }
-
 
 .characters-view,
 .comics-view {
@@ -401,7 +434,6 @@ nav {
   gap: 10px;
   align-items: start;
   margin-bottom: 2rem;
-
 }
 
 .character-card,
@@ -411,7 +443,6 @@ nav {
   box-shadow: 0px 4px 8px #000;
   background: rgba(255, 255, 255, 0.2);
   overflow: hidden;
-
 }
 
 .scalup-img {
@@ -424,7 +455,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100%;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -433,7 +463,6 @@ nav {
 .character-details h1,
 .comic-details h1 {
   margin-top: 1rem;
-
 }
 
 .character-card-link,
@@ -449,11 +478,14 @@ nav {
   cursor: pointer;
 }
 
+.avenger-name {
+  font-size: 1.17rem;
+}
+
 .character-card-link:hover,
 .comic-card-link:hover {
   transition: 0.3s;
   background: #a00028;
-
 }
 
 .character-card ul,
@@ -467,7 +499,6 @@ nav {
   background: rgb(172, 172, 172);
   margin: 0.2rem;
   border-radius: 10px;
-
   padding: 0.2rem 0.4rem;
 }
 
@@ -475,7 +506,6 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-
 }
 
 .single-character-details {
@@ -488,7 +518,6 @@ nav {
   margin: 2rem;
   margin-left: -4rem;
   width: 50%;
-
 }
 
 .single-character-details img {
@@ -501,21 +530,16 @@ nav {
   list-style: none;
   width: 80%;
   max-width: 80%;
-
 }
 
 .character-comics,
 .character-comics h3 {
   margin: 0.5rem 0;
-
 }
-
-
 
 .character-comics-list li {
   margin: 0.2rem 0.1rem 0.2rem 0;
   padding: 0.25rem 0.5rem;
-
   border-radius: 30px;
 }
 
@@ -542,8 +566,6 @@ nav {
 .info-link {
   margin-bottom: 1rem;
   margin-right: 1rem;
-
-
 }
 
 .info-link a {
@@ -558,11 +580,7 @@ nav {
 
 .info-link a:hover {
   background: #a0a0a0;
-
-
 }
-
-
 
 .character-link {
   text-decoration: none;
@@ -580,16 +598,9 @@ nav {
 }
 
 .character-link:hover {
-
   color: #cecece;
   background: #000;
 }
-
-
-
-
-
-
 
 .description {
   width: 80%;
@@ -604,15 +615,12 @@ nav {
 }
 
 .back-to-characters:hover {
-
   color: #ffffff;
   background: rgb(0, 0, 0);
-
 }
 
 .characters-list {
   list-style: none;
-
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -627,4 +635,321 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* RESPOSNIVENESS */
+
+
+@media screen and (min-width: 320px) and (max-width: 380px) {
+  .hero-link {
+    padding: 1rem 0.5rem !important;
+    font-size: 1.1rem !important;
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 50%;
+    text-align: center;
+    border-radius: 0px;
+    
+  }
+
+  .btns{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+  }
+
+
+  .paragraphs p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .hero-link {
+    padding: 0.8rem 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .hero section h1 {
+    font-size: 1.85rem;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 768px) {
+  nav{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .logo{
+    margin-bottom: 1rem;
+  }
+
+  .links-list{
+    
+    margin-right: 4rem;
+  }
+
+  .btns {
+    width: 80%;
+  }
+
+  .search-form input{
+    font-size: 1rem;
+  }
+
+  .back-to-characters{
+    display: none;
+  }
+
+  
+}
+
+@media screen and (min-width: 481px) and (max-width: 720px) {
+  nav{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .logo{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .links-list{
+    
+    margin-right: 4rem;
+  }
+
+  .btns {
+    width: 100%;
+  }
+
+  .hero-link{
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+  }
+
+  .search-form{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .search-form input{
+    font-size: 1rem;
+  }
+
+  .search-form input{
+    font-size: 1rem;
+  }
+
+  .back-to-characters{
+    display: none;
+  }
+
+  .single-character-details div {
+    margin: 0rem;
+    margin-left: 0rem;
+    margin-top: 2rem !important;
+    width: auto;
+  }
+
+  .single-character-details{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .btns{
+    width: 80%;
+  }
+
+  .single-character-details div{
+    margin-top: 0;
+    position: relative;
+    left: 5rem;
+    
+  }
+
+  .back-to-characters{
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  nav {
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.5rem 2rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .links-list {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 0 5rem;
+    transition: 0.2s;
+    position: relative;
+    animation: showLinks 0.2s linear;
+  }
+  .about-container{
+    padding-bottom: 2rem;
+  }
+  .about-container p {
+    width: 100%;
+  }
+  .character-comics-list li {
+    margin: 0.2rem 0rem 0.2rem 0;
+    padding: 0.3rem 0.5rem;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      right: 100px;
+    }
+    100% {
+      right: 0;
+    }
+  }
+
+  @keyframes showLinks {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .link-style {
+    width: 100vw;
+    display: block;
+    margin-left: 0rem;
+    transition: 0.2s;
+    margin: 0;
+    padding-left: 2rem;
+    position: relative;
+  }
+
+  .github-item {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    font-size: 2rem;
+  }
+
+  .hero section {
+    width: 100%;
+  }
+
+  .hero section h1 {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+
+  .paragraphs {
+    font-size: 1.8rem;
+  }
+
+  .btns {
+    display: flex;
+    width: 100%;
+    
+  }
+
+  .hero-link {
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  .search-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .search-form input {
+    height: 3rem !important;
+    font-size: 1.5rem !important;
+  }
+
+  .characters-view,
+  .comics-view {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .characters header,
+  .comics header {
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    font-size: 1.16rem;
+  }
+
+  .total-characters,
+  .total-comics {
+    padding-right: 1rem;
+    margin-right: 0rem;
+    border-right: 2px solid;
+  }
+
+  .characters-count,
+  .comics-count {
+    padding-left: 1rem;
+  }
+
+  .single-character {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .single-character-details {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .single-character-details div {
+    margin: 0rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+    width: auto;
+  }
+
+  .single-character-details img {
+    box-shadow: 5px 5px 35px #111111;
+  }
+
+  .back-to-characters {
+    display: none;
+  }
+
+  .character-comics-list {
+    width: 100%;
+    max-width: 100%;
+  }
 }

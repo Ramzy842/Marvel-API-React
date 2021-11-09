@@ -78,6 +78,18 @@ const MCUAvengers = [
       "http://i.annihil.us/u/prod/marvel/i/mg/2/70/50febd8be6b5d/portrait_xlarge.jpg",
     characterPath: "characters/1011299",
   },
+  {
+    id: 1010801,
+    name: "Ant-Man (Scott Lang)",
+    image: "http://i.annihil.us/u/prod/marvel/i/mg/e/20/52696868356a0/portrait_xlarge.jpg",
+    characterPath: "characters/1010801"
+  },
+  {
+    id: 1009297,
+    name: "Falcon",
+    image: "http://i.annihil.us/u/prod/marvel/i/mg/f/b0/5111505fb7009/portrait_xlarge.jpg",
+    characterPath: "characters/1009297"
+  }
 ];
 
 export default MCUAvengers;

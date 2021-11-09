@@ -98,7 +98,7 @@ const SingleCharacter = () => {
                   <li key={index}>
                     <Link
                       to={`/${extractPath("comics", resourceURI)}`}
-                      className="character-link"
+                      className="character-link character-comic"
                     >
                       {name}
                     </Link>

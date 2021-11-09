@@ -19,6 +19,16 @@ export const AppProvider = ({ children }) => {
   const [totalComics, setTotalComics] = useState(0);
   const [comicsCount, setComicsCount] = useState(0);
 
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
+  const openMenu = () => {
+    setMenuIsOpen(true)
+  }
+
+  const closeMenu = () => {
+    setMenuIsOpen(false)
+  }
+
   const extractPath = (start ,url) => {
     //search for the position of the string characters
     //then return the substring from the provided url starting from the character's position
@@ -146,7 +156,10 @@ export const AppProvider = ({ children }) => {
         comicsCount,
         characterSearchTerm,
         setCharacterSearchTerm,
-        extractPath
+        extractPath,
+        openMenu,
+        closeMenu,
+        menuIsOpen
       }}
     >
       {children}

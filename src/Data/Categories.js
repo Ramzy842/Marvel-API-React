@@ -5,12 +5,8 @@ const categories = [
     title: "MCU Avengers",
     image: avengersImage,
     path: "/mcu-avengers/characters",
-    color: "#07b1ff"
+    color: "#07b1ff",
   },
-  
-  
-  
-  
 ];
 
 export default categories;

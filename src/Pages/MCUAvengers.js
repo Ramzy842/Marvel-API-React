@@ -11,7 +11,7 @@ const MCUAvengers = () => {
   }
   return (
     <div className="mcu-characters">
-      <h1 className="page-title" >Top MCU characters</h1>
+      <h1 className="page-title" >MCU Avengers</h1>
       <ul className="mcu-characters-list">
         <div className="characters-view">
           {MCUAvengersList.map((avenger) => {
@@ -20,7 +20,7 @@ const MCUAvengers = () => {
               <div key={id} className="character-card">
                 <div className="character-details">
                   <img src={image} alt={name} />
-                  <h1>{name}</h1>
+                  <h1 className="avenger-name">{name}</h1>
                   <Link
                     to={`/${characterPath}`}
                     className="character-card-link"
