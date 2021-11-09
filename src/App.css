@@ -639,7 +639,6 @@ nav {
 
 /* RESPOSNIVENESS */
 
-
 @media screen and (min-width: 320px) and (max-width: 380px) {
   .hero-link {
     padding: 1rem 0.5rem !important;
@@ -649,19 +648,14 @@ nav {
     width: 50%;
     text-align: center;
     border-radius: 0px;
-    
   }
 
-  .btns{
+  .btns {
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-
   }
-
 
   .paragraphs p {
     font-size: 1.4rem;
@@ -680,17 +674,16 @@ nav {
 }
 
 @media screen and (min-width: 720px) and (max-width: 768px) {
-  nav{
+  nav {
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .logo{
+  .logo {
     margin-bottom: 1rem;
   }
 
-  .links-list{
-    
+  .links-list {
     margin-right: 4rem;
   }
 
@@ -698,31 +691,28 @@ nav {
     width: 80%;
   }
 
-  .search-form input{
+  .search-form input {
     font-size: 1rem;
   }
 
-  .back-to-characters{
+  .back-to-characters {
     display: none;
   }
-
-  
 }
 
 @media screen and (min-width: 481px) and (max-width: 720px) {
-  nav{
+  nav {
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .logo{
+  .logo {
     padding: 0;
     margin: 0;
     margin-bottom: 1rem;
   }
 
-  .links-list{
-    
+  .links-list {
     margin-right: 4rem;
   }
 
@@ -730,26 +720,26 @@ nav {
     width: 100%;
   }
 
-  .hero-link{
+  .hero-link {
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
     margin-right: 1rem;
   }
 
-  .search-form{
+  .search-form {
     width: 80%;
     margin: 0 auto;
   }
 
-  .search-form input{
+  .search-form input {
     font-size: 1rem;
   }
 
-  .search-form input{
+  .search-form input {
     font-size: 1rem;
   }
 
-  .back-to-characters{
+  .back-to-characters {
     display: none;
   }
 
@@ -760,28 +750,26 @@ nav {
     width: auto;
   }
 
-  .single-character-details{
+  .single-character-details {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .btns{
+  .btns {
     width: 80%;
   }
 
-  .single-character-details div{
+  .single-character-details div {
     margin-top: 0;
     position: relative;
     left: 5rem;
-    
   }
 
-  .back-to-characters{
+  .back-to-characters {
     padding: 0.5rem;
     font-size: 1rem;
   }
-
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -810,9 +798,9 @@ nav {
     padding: 0 5rem;
     transition: 0.2s;
     position: relative;
-    animation: showLinks 0.2s linear;
+    animation: showLinks 0.5s linear;
   }
-  .about-container{
+  .about-container {
     padding-bottom: 2rem;
   }
   .about-container p {
@@ -836,6 +824,7 @@ nav {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
@@ -876,7 +865,6 @@ nav {
   .btns {
     display: flex;
     width: 100%;
-    
   }
 
   .hero-link {
