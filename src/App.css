@@ -651,18 +651,17 @@ nav {
   }
 
   .btns {
-    
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .hero{
+  .hero {
     margin-top: 3rem;
   }
 
-  .hero section h1{
+  .hero section h1 {
     margin-bottom: 3rem !important;
   }
 
@@ -670,7 +669,7 @@ nav {
     font-size: 1.4rem;
     margin-bottom: 1rem;
   }
-  .paragraphs{
+  .paragraphs {
     margin-bottom: 1rem;
   }
 }
@@ -686,7 +685,7 @@ nav {
     width: 80vw;
   }
 
-  .paragraphs{
+  .paragraphs {
     font-size: 1.3rem !important;
   }
 }
@@ -763,7 +762,7 @@ nav {
 
   .single-character-details div {
     margin: 0rem;
-    margin-left: 0rem;
+    margin-left: 0rem !important;
     margin-top: 2rem !important;
     width: auto;
   }
@@ -773,12 +772,13 @@ nav {
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (min-width: 768px) and (max-width: 1150px) {
   .btns {
     width: 80%;
   }
 
   .single-character-details div {
+    justify-self: flex-start;
     margin-top: 0;
     position: relative;
     left: 5rem;
@@ -957,5 +957,148 @@ nav {
   .character-comics-list {
     width: 100%;
     max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1151px) {
+  nav {
+    padding: 0.8rem 3rem;
+    border-bottom: 2px solid #fff;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .link-style,
+  .github-link {
+    font-size: 1.3rem;
+  }
+
+  .links-list {
+    max-width: 450px;
+  }
+
+  .hero section h1 {
+    font-size: 4rem;
+  }
+
+  .paragraphs p {
+    font-size: 2rem;
+  }
+
+  .btns {
+    width: 80%;
+  }
+
+  .hero-link {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1551px) {
+  nav {
+    align-items: center !important;
+  }
+
+  .logo {
+    margin: 0;
+    font-size: 3.5rem;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .links-list {
+    margin: 0;
+    margin-right: 14rem;
+    width: auto;
+  }
+
+  .link-style,
+  .github-link {
+    font-size: 2.1rem;
+  }
+
+  .hero section h1 {
+    font-size: 6rem;
+  }
+
+  .paragraphs p {
+    font-size: 3.2rem;
+  }
+
+  .btns {
+    width: 73%;
+  }
+
+  .hero-link {
+    font-size: 2rem;
+  }
+
+  .search-form {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+  }
+  .search-form input {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+    font-size: 2.8rem !important;
+    width: 40% !important;
+    height: 80% !important;
+  }
+
+  .characters-count,
+  .total-characters,
+  .comics-count,
+  .total-comics {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .character-details h1 {
+    font-size: 2rem;
+  }
+
+  .back-to-characters {
+    font-size: 1.4rem !important;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+
+  .github-link-footer{
+    font-size: 2rem;
+  }
+
+  .about-container h1{
+    font-size: 3rem;
+  }
+
+  .about-container p{
+    font-size: 2rem;
+    line-height: 2.2;
+  }
+
+  .about-container h2, .developer-links h2{
+    font-size: 2rem;
+  }
+
+  .tech-logo{
+    font-size: 5rem;
+  }
+
+  .character-comic{
+    font-size: 1.8rem;
   }
 }
