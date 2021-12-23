@@ -47,11 +47,11 @@ const Home = () => {
 
             return (
               <div key={index} className="mcu-avengers">
-                <h2 style={{ background: `${color}` }}>{title}</h2>
-                <div className="mcu-avengers-content">
+                <h2 style={{ background: `${color}`, zIndex: 2 }}>{title}</h2>
+                <div className="mcu-avengers-content" style={{zIndex: 1}}>
                   <img
                     src={image}
-                    style={{ boxShadow: `0px 2px 8px ${color}` }}
+                    style={{ boxShadow: `0px 2px 8px ${color}`,  }}
                     alt={title}
                   />
                   <Link

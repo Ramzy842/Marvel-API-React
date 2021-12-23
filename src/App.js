@@ -13,6 +13,7 @@ import CharacterSearchForm from "./Components/CharacterSearchForm";
 import ComicSearchForm from "./Components/ComicSearchForm";
 import Footer from "./Components/Footer";
 import MCUAvengers from "./Pages/MCUAvengers";
+import SMNWH from "./Pages/SMNWH"
 
 function App() {
   return (
@@ -32,6 +33,13 @@ function App() {
             <Footer />
           </div>
         </Route>
+        <Route path="/spider-man-no-way-home/characters">
+          <div className="mcu-page">
+            <SMNWH />
+            <Footer />
+          </div>
+        </Route>
+        
         <Route exact path="/characters/:id">
           <div className="single-character-page">
             <SingleCharacter />

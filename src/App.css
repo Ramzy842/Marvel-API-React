@@ -441,8 +441,15 @@ nav {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 8px #000;
-  background: rgba(255, 255, 255, 0.2);
+  
   overflow: hidden;
+  
+  background: rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .scalup-img {
@@ -1077,28 +1084,29 @@ nav {
     padding: 1rem 0;
   }
 
-  .github-link-footer{
+  .github-link-footer {
     font-size: 2rem;
   }
 
-  .about-container h1{
+  .about-container h1 {
     font-size: 3rem;
   }
 
-  .about-container p{
+  .about-container p {
     font-size: 2rem;
     line-height: 2.2;
   }
 
-  .about-container h2, .developer-links h2{
+  .about-container h2,
+  .developer-links h2 {
     font-size: 2rem;
   }
 
-  .tech-logo{
+  .tech-logo {
     font-size: 5rem;
   }
 
-  .character-comic{
+  .character-comic {
     font-size: 1.8rem;
   }
 }

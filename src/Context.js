@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useCallback } from "react";
+import React, { useContext, useEffect, useState, useCallback} from "react";
 
 const AppContext = React.createContext();
 
@@ -20,6 +20,13 @@ export const AppProvider = ({ children }) => {
   const [comicsCount, setComicsCount] = useState(0);
 
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  
+  const handleMouseOver = (imgRef) => {
+    imgRef.current.classList.add("scalup-img");
+  };
+  const handleMouseOut = (imgRef) => {
+    imgRef.current.classList.remove("scalup-img");
+  };
 
   const openMenu = () => {
     setMenuIsOpen(true)
@@ -159,7 +166,8 @@ export const AppProvider = ({ children }) => {
         extractPath,
         openMenu,
         closeMenu,
-        menuIsOpen
+        menuIsOpen,
+        handleMouseOut, handleMouseOver
       }}
     >
       {children}

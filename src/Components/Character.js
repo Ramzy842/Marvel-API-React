@@ -1,22 +1,18 @@
-import React, { useRef } from "react";
+import React, {useRef} from "react";
 import { Link } from "react-router-dom";
+import GlobalContext from "../Context";
 const Character = ({
   id,
   name,
   thumbnail,
 }) => {
+  const { handleMouseOut, handleMouseOver} = GlobalContext()
   const imageRef = useRef(null);
-  const handleMouseOver = (e) => {
-    imageRef.current.classList.add("scalup-img");
-  };
-  const handleMouseOut = () => {
-    imageRef.current.classList.remove("scalup-img");
-  };
   return (
     <article
       className="character-card"
-      onMouseOver={handleMouseOver}
-      onMouseOut={handleMouseOut}
+      onMouseOver={() => handleMouseOver(imageRef)}
+      onMouseOut={() => handleMouseOut(imageRef)}
     >
       <div className="character-details">
         <img
